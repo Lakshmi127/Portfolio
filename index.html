@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a323cedcc9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Picsart_23-07-10_20-22-34-872.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Internship</a></li>
+                    <li><a href="#portfolio">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi,I am <span>Lakshmi</span><br> from MVIT.</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------------------- about --------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-1">
+                    <img src="IMG_20230709_174026.jpg">
+                </div>
+                <div class="about-2">
+                    <h1 class="title">About me</h1>
+                    <p>I'm a pre- final year ECE student at Sir M Visvesvaraya institute of technology.
+                        I've decent knowledge on HTML,CSS and JavaScript. Currently learning Data structures and algorithms in Java. Enthusiast to learn and explore many more.
+                    </p>
+                    <div class="tab-tit">
+                        <div class="tab-link active-link" onclick="opentab('Skills')">Skills</div>
+                        <div class="tab-link" onclick="opentab('experience')">Projects</div>
+                        <div class="tab-link" onclick="opentab('education')">Education</div>
+                    </div>
+                    <!-- skill -->
+                    <div class="tab-content active-tab" id="Skills">
+                        <ul>
+                            <li><span>Java</span><br>Data structure and algorithm</li>
+                            <li><span>Frontend Web Development</span><br>HTML,CSS,JavaScript</li>
+                            <li><span>Python</span><br>Object Oriented Programming</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project -->
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Food Spoilage Detection System</span><br>IoT based Embedded System.</li>
+                            <li><span>Basic Banking System</span><br>Banking platform with sample of 10 Users.</li>
+                            <li><span>Temperature converter</span><br>Using HTML,CSS and JavaScript.</li>
+                        </ul>
+                    </div>
+                    <!-- education -->
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Bachelor of Engineering</span><br>2020-2024 | CGPA - 8.3 | Electronics and Communication Engineering</li>
+                            <li><span>Senior Secondary - XII</span><br>2018-2020 | Percentage - 91.3%</li>
+                            <li><span>Matriculation</span><br>2018 | Percentage - 90.24%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service -->
+    <div id="service">
+        <div class="container">
+            <h1 class="title">My Internship</h1>
+            <div class="servic-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Bharat Intern</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam suscipit omnis sapiente temporibus enim hic, ipsam modi tenetur facere tempore voluptates voluptatibus vero atque eligendi iusto tempora commodi dolore voluptatem. Et, voluptas rerum.</p>
+                    <a href="#">View Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Oasis Infobyte</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam suscipit omnis sapiente temporibus enim hic, ipsam modi tenetur facere tempore voluptates voluptatibus vero atque eligendi iusto tempora commodi dolore voluptatem. Et, voluptas rerum.</p>
+                    <a href="#">View Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Varcons Technology</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam suscipit omnis sapiente temporibus enim hic, ipsam modi tenetur facere tempore voluptates voluptatibus vero atque eligendi iusto tempora commodi dolore voluptatem. Et, voluptas rerum.</p>
+                    <a href="#">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------- portfolio section  my work------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="title">My Project</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="6af22a04525fd89bd193dd8d3669d434.jpg">
+                    <div class="layer">
+                        <h3><b>Food Spoilage Detection System</b></h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque fuga animi, accusamus est at ullam.</p>
+                        <a href="#">link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Artificial-Intelligence-5.jpg">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque fuga animi, accusamus est at ullam.</p>
+                        <a href="#">link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="796849.jpg">
+                    <div class="layer">
+                        <h3>Python</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque fuga animi, accusamus est at ullam.</p>
+                        <a href="#">link</a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="6af22a04525fd89bd193dd8d3669d434.jpg">
+                    <div class="layer">
+                        <h3>Food Spoilage Detection System</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque fuga animi, accusamus est at ullam.</p>
+                        <a href="#">link</a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="#" class="button">See more</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left-col">
+                    <h1 class="title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>lakshmis122002@gmail.com</p>
+                    <p><i class="fa-regular fa-phone"></i></i>+91 12345678</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Artificial-Intelligence-5.jpg" download class="button btn2">Download CV</a>
+                </div>
+                <div class="right-col">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="button btn2">Submit</button>
+                    </form>
+                    <span id="mesg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright </p>
+        </div>
+    </div>
+    <!-- java script part -->
+    <script>
+        var tabLink = document.getElementsByClassName("tab-link");
+        var tabContent = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablin of tabLink){
+                tablin.classList.remove("active-link");
+            }
+            for(tabcont of tabContent){
+                tabcont.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemen=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemen.style.right="0";
+        }
+        function closemenu(){
+            sidemen.style.right="-200px";
+        }
+    </script>
+    <!-- copied javascript from github and made little changes for google sheet integration -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxLY9ui2jYdFDoFsYtd6biYV5uGuFCi_HfBhlAmM1tiM3Ez5B2x9usbnOZJHXEjsWljCA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const mesg = document.getElementById("mesg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                mesg.innerHTML= "Message sent successfully!"
+                setTimeout(function(){
+                    mesg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
